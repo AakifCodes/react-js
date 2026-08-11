@@ -1,3 +1,4 @@
+//backend logic main.jsx render function
 function CustomRender(reactElement, container){
     /*
     const domElement = document.createElement(reactElement.type)
@@ -16,6 +17,7 @@ function CustomRender(reactElement, container){
     container.appendChild(domElement)
 }
 
+//app.jsx
 const reactElement = {
     type : "a",
     props : {
@@ -25,6 +27,7 @@ const reactElement = {
     children : "Click me to visit"
 }
 
+//vite main.jsx 
 const mainContainer = document.querySelector("#root")
 
 CustomRender(reactElement, mainContainer)
