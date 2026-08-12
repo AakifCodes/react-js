@@ -6,16 +6,20 @@ function App() {
   // let counter = 15
 
   const incCount = ()=>{
-    counter = counter + 1
-    console.log(counter)
-    setCounter(counter)
+    if(counter <= 19){
+      counter = counter + 1
+      console.log(counter)
+      setCounter(counter)
+  }
     
   }
 
   const decCount = ()=>{
-    counter = counter - 1
-    console.log(counter);
-    setCounter(counter)
+    if(counter > 0){
+      // counter = counter - 1
+      setCounter(counter - 1)
+      console.log(counter);
+    }
     
   }
 
