@@ -1,11 +1,9 @@
-
-
 function App() {
   let counter = 15
 
   const incCount = ()=>{
     counter = counter + 1
-    console.log(counter);
+    console.log(counter)
     
   }
 
