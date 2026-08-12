@@ -1,15 +1,21 @@
+import { useState } from "react"
+
 function App() {
-  let counter = 15
+
+  let [counter, setCounter] = useState(15)
+  // let counter = 15
 
   const incCount = ()=>{
     counter = counter + 1
     console.log(counter)
+    setCounter(counter)
     
   }
 
   const decCount = ()=>{
     counter = counter - 1
     console.log(counter);
+    setCounter(counter)
     
   }
 
