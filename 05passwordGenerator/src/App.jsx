@@ -20,18 +20,21 @@ function App() {
     }
     setPassword(pass)
 
-  }, [length, numberAllowed, charAllowed, serPassword])
+  }, [length, numberAllowed, charAllowed, setPassword])
 
 
   return (
     <>
       <div className='w-full max-w-md mx-auto shadow-md
-      rounded-lg px-4 my-8 text-orange-500 bg-gray-700'>
+      rounded-lg px-4 my-8 text-orange-500 bg-gray-800'>
+        <h1 className='text-white text-center p-4'>Password Generator</h1>
         <div className='flex shadow rounded-lg overflow-hidden mb-4'>
           <input 
           type="text" 
           value={password}
-          className='outline-none w-full py-1 px-3'
+          className='outline-none w-full py-1 px-3 text-gray-600 bg-amber-50 p-4 m-4'
+          placeholder='Password'
+          readOnly
           />
 
         </div>
