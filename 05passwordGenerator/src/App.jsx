@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import Button from './components/button'
 import './App.css'
 
@@ -23,6 +23,10 @@ function App() {
 
   }, [length, numberAllowed, charAllowed, setPassword])
 
+  useEffect(() => {
+    passwordGenerator()
+
+  }, [length, numberAllowed, charAllowed, passwordGenerator])
 
   return (
     <>
@@ -57,6 +61,7 @@ function App() {
           <div className='flex items-center gap-x-1'>
             <input 
             type="checkbox"
+            defaultChecked={numberAllowed}
             id="numberInput" 
             onChange={() => {
               setNumberAllowed((prev) => !prev)
