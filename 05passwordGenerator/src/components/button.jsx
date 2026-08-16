@@ -1,6 +1,5 @@
-export default function Button(){
+export default function Button({onClick}){
     return(
-        <button className="outline-none bg-blue-700 text-white p-4 py-1 m-4
-        shrink-0">Copy</button>
+        <button onClick={onClick} className="outline-none bg-blue-700 text-white p-4 py-1 m-4 hover:bg-blue-800 rounded shrink-0 transition-colors">Copy</button>
     )
 }
