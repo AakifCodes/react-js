@@ -1,4 +1,3 @@
-
 function InputBox({
     label,
     amount,
@@ -19,7 +18,6 @@ function InputBox({
                     {label}
                 </label>
                 <input
-                    
                     className="outline-none w-full bg-transparent py-1.5"
                     type="number"
                     placeholder="Amount"
