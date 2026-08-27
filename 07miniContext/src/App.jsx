@@ -5,7 +5,9 @@ function App() {
 
   return (
     <>
-    
+      <UserContextProvider>
+        <h1>Alvi</h1>
+      </UserContextProvider>
     </>
   )
 }
