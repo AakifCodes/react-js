@@ -1,15 +1,14 @@
-
-import './App.css'
+import UserContextProvider from './context/userContextProvider';
+import Login from './components/Login';
+import Profile from './components/Profile';
 
 function App() {
-
   return (
-    <>
-      <UserContextProvider>
-        <h1>Alvi</h1>
-      </UserContextProvider>
-    </>
-  )
+    <UserContextProvider>
+      <Login />
+      <Profile />
+    </UserContextProvider>
+  );
 }
 
-export default App
+export default App;
