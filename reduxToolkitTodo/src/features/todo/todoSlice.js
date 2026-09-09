@@ -22,8 +22,7 @@ export const todoSlice = createSlice({
             const { id, text } = action.payload;
             const existingTodo = state.todos.find((todo) => todo.id === id);
             if (existingTodo) {
-                // Space ke sath naya text append kar rahe hain
-                existingTodo.text = `${existingTodo.text} ${text}`;
+                existingTodo.text = text;
             }
         }
     }
